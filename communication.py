@@ -26,9 +26,9 @@ class Communication:
         self.client.on_message = self.safe_on_message_handler
         # Add your client setup here
         self.client.username_pw_set(username='127',
-                                    password='fU3wjUY0zn')
+                                    password='some password...')
         # Your group credentials, see the python skill-test for your group password
-        self.client.connect(host='mothership.inf.tu-dresden.de', port=8883)
+        self.client.connect(host='host of the project', port='corresponding port')
         self.client.subscribe(topic='explorer/127', qos=2)
         self.client.subscribe(topic='comtest/127', qos=2)
         self.logger = logger
